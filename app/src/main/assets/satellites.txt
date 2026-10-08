@@ -1,0 +1,186 @@
+# ============================================================
+#  OrbiTV - liste des satellites
+#  Une ligne commençant par @ = un satellite.
+#  Les lignes suivantes = noms de chaînes (dans l'ordre d'affichage).
+#  Une chaîne n'apparaît que si un flux gratuit existe pour elle.
+#  Tu peux modifier / ajouter des chaînes librement.
+# ============================================================
+
+@ Nilesat 201 / 301 — 7°W
+Al Jazeera
+Al Jazeera Mubasher
+Al Arabiya
+Al Hadath
+Sky News Arabia
+Al Ghad
+Al Araby
+France 24 Arabic
+Al Aoula
+Arryadia
+Athaqafia
+Assadissa
+Tamazight
+Laayoune
+Al Maghribia
+2M
+Medi1
+Aflam TV
+Canal Algerie
+Echorouk
+Ennahar
+El Bilad
+Dzair TV
+Wataniya
+Hannibal
+Nessma
+El Hiwar Ettounsi
+Attessia
+Nile TV
+Nile Cinema
+Nile Drama
+Nile Comedy
+Nile Family
+Nile Culture
+Nile News
+Nile Sport
+Nile Life
+Egyptian Channel
+Al Qahera
+Sada El Balad
+Al Mehwar
+CBC
+CBC Drama
+CBC Sofra
+Al Nahar
+Al Nahar Drama
+Al Hayat
+DMC
+DMC Drama
+MBC 1
+MBC 2
+MBC 3
+MBC 4
+MBC Action
+MBC Max
+MBC Masr
+MBC Masr 2
+MBC Drama
+Rotana Cinema
+Rotana Clip
+Rotana Khalijiah
+Rotana Music
+Rotana Classic
+Rotana Drama
+Dubai TV
+Sama Dubai
+Abu Dhabi TV
+Sharjah TV
+Saudi TV
+Al Ekhbariya
+Kuwait TV
+Oman TV
+Qatar TV
+Al Rayyan
+Bahrain TV
+Al Iraqiya
+Al Sharqiya
+Jordan TV
+Roya
+Palestine TV
+LBC
+Al Jadeed
+MTV Lebanon
+Iqraa
+Al Majd
+Saudi Quran
+Saudi Sunnah
+
+@ Hotbird — 13°E
+Euronews
+France 24
+TV5Monde
+RT
+RT Arabic
+Rai 1
+Rai 2
+Rai 3
+Rai News 24
+Al Jazeera English
+CGTN
+CGTN Arabic
+CGTN Francais
+TRT World
+TRT Arabi
+DW
+DW Arabia
+Nile TV International
+Medi1
+2M Monde
+i24 News
+Press TV
+NASA TV
+Arirang
+Al Arabiya
+Sky News Arabia
+
+@ Arabsat / Badr — 26°E
+Al Jazeera
+Al Arabiya
+Saudi TV
+Al Ekhbariya
+SBC
+Thikrayat
+Saudi Quran
+Saudi Sunnah
+Dubai TV
+Sama Dubai
+Abu Dhabi TV
+Emarat TV
+Sharjah TV
+Kuwait TV
+Oman TV
+Qatar TV
+Al Rayyan
+Bahrain TV
+Al Iraqiya
+Al Sharqiya
+Kurdsat
+Yemen TV
+Sudan TV
+Syria TV
+Tele Liban
+LBC
+Al Jadeed
+MTV Lebanon
+Jordan TV
+Roya
+Palestine TV
+Rotana Clip
+Rotana Music
+Rotana Khalijiah
+Rotana Cinema
+Rotana Classic
+Rotana Drama
+Iqraa
+Al Majd
+Al Resalah
+Al Nas
+
+@ Eutelsat 5 West A — 5°W
+Canal Algerie
+A3 Algerie
+Echorouk
+Ennahar
+El Bilad
+Dzair TV
+Samira TV
+Beur TV
+Berbere TV
+TV5Monde
+France 24
+Medi1
+Al Aoula
+Arryadia
+Tamazight
+2M
+Al Maghribia

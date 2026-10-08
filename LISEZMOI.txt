@@ -1,0 +1,27 @@
+OrbiTV - mode d'emploi (5 minutes)
+==================================
+
+COMPILER L'APK (une seule fois)
+1. Sur GitHub, cree un NOUVEAU depot vide (ex. : orbitv).
+2. Decompresse ce ZIP sur ton PC.
+3. Sur la page du depot : "Add file" > "Upload files" > glisse TOUT le contenu du
+   dossier decompresse (y compris le dossier ".github") > "Commit changes".
+   Si ".github" n'apparait pas : "Add file" > "Create new file", nomme-le
+   .github/workflows/build-apk.yml et colle le contenu du fichier du meme nom.
+4. Onglet "Actions" : le build demarre tout seul (environ 5 minutes).
+5. Quand il est vert : a droite de la page du depot, "Releases" > OrbiTV vN >
+   telecharge "OrbiTV.apk".
+6. Copie l'APK sur la box (cle USB, ou application "Downloader" avec le lien),
+   puis installe-le (autoriser "sources inconnues").
+
+TELECOMMANDE
+- Menu : fleches + OK.
+- Dans une liste : OK = regarder, appui long sur OK (ou touche Menu) = favori.
+- En lecture : Haut/Bas = chaine suivante/precedente, chiffres = numero de chaine,
+  OK ou Gauche = liste des chaines, Droite = format de l'image (origine / zoom),
+  Retour = quitter.
+
+PERSONNALISER
+- Satellites et chaines de chaque satellite : app/src/main/assets/satellites.txt
+  (un nom de chaine par ligne, texte simple).
+- Compatible Android 5.0 et plus (minSdk 21).
