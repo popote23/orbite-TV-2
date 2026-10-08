@@ -89,6 +89,12 @@ public class BrowseActivity extends Activity {
         root.addView(emptyView, new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
+        // navigation explicite entre la liste des groupes et celle des chaînes
+        groupList.setId(View.generateViewId());
+        chanList.setId(View.generateViewId());
+        groupList.setNextFocusRightId(chanList.getId());
+        chanList.setNextFocusLeftId(groupList.getId());
+
         setContentView(root);
 
         groupList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

@@ -16,6 +16,7 @@ public class HomeActivity extends Activity {
     private final Handler h = new Handler(Looper.getMainLooper());
     private TextView status;
     private TextView[] counts;
+    private View[] tiles;
     private boolean wasLoading = false;
 
     private static final String[][] TILES = {
@@ -85,6 +86,7 @@ public class HomeActivity extends Activity {
 
         // ----- tuiles -----
         counts = new TextView[TILES.length];
+        tiles = new View[TILES.length];
         View first = null;
         for (int row = 0; row < 2; row++) {
             LinearLayout line = new LinearLayout(this);
@@ -100,6 +102,7 @@ public class HomeActivity extends Activity {
                 int mg = Ui.u(this, 7);
                 tp.setMargins(mg, mg, mg, mg);
                 line.addView(tile, tp);
+                tiles[idx] = tile;
                 if (first == null) first = tile;
             }
         }
@@ -111,6 +114,16 @@ public class HomeActivity extends Activity {
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         hp.topMargin = Ui.u(this, 10);
         root.addView(hint, hp);
+
+        // voisins explicites : gauche/droite dans la rangée, haut/bas entre les 2 rangées
+        for (int i = 0; i < tiles.length; i++) {
+            int row = i / 4, col = i % 4;
+            View t = tiles[i];
+            t.setNextFocusLeftId(tiles[col > 0 ? i - 1 : i].getId());
+            t.setNextFocusRightId(tiles[col < 3 ? i + 1 : i].getId());
+            t.setNextFocusUpId(tiles[row > 0 ? i - 4 : i].getId());
+            t.setNextFocusDownId(tiles[row < 1 ? i + 4 : i].getId());
+        }
 
         setContentView(root);
         if (first != null) first.requestFocus();
@@ -126,6 +139,7 @@ public class HomeActivity extends Activity {
         int p = Ui.u(this, 18);
         t.setPadding(p, p, p, p);
         t.setBackgroundDrawable(Ui.tileBackground(this, COLORS[idx][0], COLORS[idx][1]));
+        t.setId(View.generateViewId());
         t.setFocusable(true);
         t.setClickable(true);
 
@@ -145,7 +159,7 @@ public class HomeActivity extends Activity {
             public void onFocusChange(View v, boolean hasFocus) {
                 float s = hasFocus ? 1.06f : 1f;
                 v.animate().scaleX(s).scaleY(s).setDuration(140).start();
-                if (hasFocus) v.bringToFront();
+                v.setTranslationZ(hasFocus ? Ui.u(HomeActivity.this, 12) : 0f);
             }
         });
         t.setOnClickListener(new View.OnClickListener() {
